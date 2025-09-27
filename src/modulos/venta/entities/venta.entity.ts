@@ -9,6 +9,9 @@ export class Venta {
     @Column({type: 'date'})
     Fecha : Date;
 
+    @Column({type: 'boolean', default: true})
+    Estado: boolean;
+
     @Column()
     CodigoProducto: number;
 

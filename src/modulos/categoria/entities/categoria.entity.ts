@@ -7,6 +7,9 @@ export class Categoria {
   @PrimaryGeneratedColumn({ name: 'CodigoCategoria' }) 
   id: number; 
 
+  @Column({type: 'boolean', default: true})
+  Estado: boolean;
+  
   @Column({ name: 'nombre' })
   nombre: string;
 

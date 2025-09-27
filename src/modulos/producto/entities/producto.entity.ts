@@ -1,4 +1,3 @@
-import { on } from "events";
 import { Categoria } from "src/modulos/categoria/entities/categoria.entity";
 import { Venta } from "src/modulos/venta/entities/venta.entity";
 import { Column, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "typeorm";
@@ -10,6 +9,9 @@ export class Producto {
 
     @Column({length: 255, unique: true})
     Nombre: string;
+
+    @Column({type: 'boolean', default: true})
+    Estado: boolean;
 
     @Column()
     CodigoCategoria: number;
