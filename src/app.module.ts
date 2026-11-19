@@ -16,8 +16,8 @@ import { Venta } from './modulos/venta/entities/venta.entity';
       type: 'mysql',
       host: 'localhost',
       port: 3306,
-      username: 'carlos',
-      password: '12345678',
+      username: 'root',
+      password: '1234',
       database: 'PruebaTecnica',
       entities: [Producto, Categoria, Venta],
       synchronize: true,
@@ -29,4 +29,4 @@ import { Venta } from './modulos/venta/entities/venta.entity';
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }
